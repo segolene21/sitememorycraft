@@ -1,0 +1,751 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#F8F5F0;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:#3B0D0D;
+    z-index:1000;
+}
+
+.navbar{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    text-decoration:none;
+    font-size:28px;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+.menu a{
+    color:rgb(247, 239, 236);
+    text-decoration:none;
+}
+
+.btn-nav{
+
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    background:#edb23a;
+    padding:12px 24px;
+    border-radius:30px;
+
+}
+
+/* HERO */
+
+#hero{
+
+    height:100vh;
+
+    background:#3B0D0D;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+
+.hero-content{
+
+    width:700px;
+
+}
+
+.hero-content h1{
+
+    font-size:50px;
+    font-family:'Cormorant Garamond',serif;
+    margin-bottom:25px;
+
+}
+
+.hero-content p{
+
+    font-size:16px;
+    margin-bottom:40px;
+    line-height:1.8;
+
+}
+
+.hero-btn{
+
+    display:inline-block;
+    padding:12px 30px;
+
+    background:#edb23a;
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+}
+
+/* TITRES */
+
+section{
+
+    padding:120px 8%;
+
+}
+
+section h2{
+
+    text-align:center;
+    font-size:50px;
+    margin-bottom:60px;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+/* CARTES */
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card img{
+
+    width:100%;
+    height:300px;
+    object-fit:cover;
+
+}
+
+.card h3{
+
+    text-align:center;
+    padding:25px;
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+/* GALERIE */
+
+/*==========================
+      RÉALISATIONS
+==========================*/
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.03);
+
+}
+/*==========================
+        TARIFS
+==========================*/
+
+#tarifs{
+    background:#3B0D0D;
+}
+
+.price-list{
+    max-width:900px;
+    margin:auto;
+    background:#F6F0EA;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.category{
+    margin-bottom:50px;
+}
+
+.category:last-child{
+    margin-bottom:0;
+}
+
+.category h3{
+    font-family:'Cormorant Garamond', serif;
+    font-size:42px;
+    color:#6B4B3E;
+    margin-bottom:25px;
+}
+
+.price-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+    border-bottom:1px solid #D8CFC7;
+    font-size:20px;
+}
+
+.price-row:last-child{
+    border-bottom:none;
+}
+
+.price-row span:first-child{
+    color:#555;
+}
+
+.price-row span:last-child{
+    font-weight:600;
+    color:#6B4B3E;
+}
+/*==========================
+      COMMENT ÇA MARCHE
+==========================*/
+
+#process{
+
+    background:#FCFAF7;
+
+}
+
+.steps{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.step{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.step:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.number{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    background:#4A1616;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+.step h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:#4A1616;
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+.step p{
+
+    color:#666;
+
+    line-height:1.8;
+    }
+
+/*==========================
+          FOOTER
+==========================*/
+
+footer{
+
+    background:#2B0C0C;
+
+    color:white;
+
+    padding:70px 8% 30px;
+
+}
+
+.footer-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:50px;
+
+}
+
+.footer-logo h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+.footer-logo p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+
+.footer-links h4,
+.footer-contact h4{
+
+    margin-bottom:20px;
+
+    color:#C7A15A;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#C7A15A;
+
+}
+
+.footer-contact p{
+
+    margin-bottom:12px;
+
+    color:#ddd;
+
+}
+
+footer hr{
+
+    margin:50px 0 25px;
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    color:#bbb;
+
+}
+/*==========================
+          FOOTER
+==========================*/
+
+footer{
+
+    background:#2B0C0C;
+
+    color:white;
+
+    padding:70px 8% 30px;
+
+}
+
+.footer-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:50px;
+
+}
+
+.footer-logo h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+.footer-logo p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+
+.footer-links h4,
+.footer-contact h4{
+
+    margin-bottom:20px;
+
+    color:#C7A15A;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#C7A15A;
+
+}
+
+.footer-contact p{
+
+    margin-bottom:12px;
+
+    color:#ddd;
+
+}
+
+footer hr{
+
+    margin:50px 0 25px;
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    color:#bbb;
+
+}
+/*==========================
+        PAGE COMMANDER
+==========================*/
+
+#commande{
+
+    padding:170px 8% 100px;
+
+    text-align:center;
+
+    background:#FCFAF7;
+
+}
+
+#commande h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:60px;
+
+    color:#4A1616;
+
+    margin-bottom:20px;
+
+}
+
+.commande-intro{
+
+    max-width:750px;
+
+    margin:0 auto 70px;
+
+    font-size:18px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.commande-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:100 px;
+
+}
+
+.commande-card{
+
+    text-decoration:none;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    color:#333;
+
+}
+
+.commande-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.commande-card img{
+
+    width:80%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.commande-card:hover img{
+
+    transform:scale(1);
+
+}
+
+.commande-card h3{
+
+    margin-top:25px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:#4A1616;
+
+    font-size:30px;
+
+}
+
+.commande-card span{
+
+    display:block;
+
+    margin:20px 0 30px;
+
+    color:#C7A15A;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+p{
+    max-width:800px;
+    margin:0 auto 50px;
+    font-size:18px;
+    color:#050505;
+    line-height:1.8;
+    text-align:center;
+}
+/*==========================
+      UN PETIT MOT
+==========================*/
+
+#message{
+    background:#FCFAF7;
+    padding:100px 8%;
+}
+
+.message-card{
+
+    max-width:850px;
+    margin:auto;
+    background:#FFFDFB;
+    padding:60px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.quote{
+
+    font-size:70px;
+    color:#C7A15A;
+    display:block;
+    margin-bottom:10px;
+
+}
+
+.message-card h2{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:45px;
+    color:#4A1616;
+    margin-bottom:25px;
+
+}
+
+.message-card p{
+
+    color:#666;
+    font-size:18px;
+    line-height:2;
+    margin-bottom:20px;
+
+}
+
+.message-card h3{
+
+    margin-top:35px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:32px;
+    color:#C7A15A;
+
+}
